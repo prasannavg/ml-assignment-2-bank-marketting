@@ -28,7 +28,7 @@ This is a **binary classification** problem: output `yes` (1) or `no` (0).
 
 ## GitHub Repository Link
 
-
+> **[https://github.com/prasannavg/ml-assignment-2-bank-marketting](https://github.com/prasannavg/ml-assignment-2-bank-marketting)**
 
 ---
 
@@ -63,7 +63,7 @@ This is a **binary classification** problem: output `yes` (1) or `no` (0).
 
 ## Live Streamlit App
 
-
+> **[https://ml-assignment-2-2025ac05356.streamlit.app/](https://ml-assignment-2-2025ac05356.streamlit.app/)**
 ---
 
 ## Project Structure
