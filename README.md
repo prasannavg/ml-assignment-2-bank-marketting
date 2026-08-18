@@ -28,7 +28,8 @@ This is a **binary classification** problem: output `yes` (1) or `no` (0).
 
 ## GitHub Repository Link
 
-> **[https://github.com/prasannavg/ml-assignment-2-bank-marketting](https://github.com/prasannavg/ml-assignment-2-bank-marketting)**
+> **[https://github.com/prasannavg/ml-assignment-2-bank-marketting]https://github.com/prasannavg/ml-assignment-2-bank-marketting)**
+>
 
 ---
 
@@ -64,6 +65,8 @@ This is a **binary classification** problem: output `yes` (1) or `no` (0).
 ## Live Streamlit App
 
 > **[https://ml-assignment-2-2025ac05356.streamlit.app/](https://ml-assignment-2-2025ac05356.streamlit.app/)**
+>
+
 ---
 
 ## Project Structure
@@ -82,13 +85,8 @@ assignment-2/
 │   ├── knn.pkl
 │   ├── naive_bayes.pkl
 │   └── random_forest.pkl
-└── training/               # Training source code (*.py)
-    ├── train_all.py       # Orchestrator, run this first
-    ├── logistic_regression.py
-    ├── decision_tree.py
-    ├── knn.py
-    ├── naive_bayes.py
-    └── random_forest.py
+└── training/               # Training source code (*.ipynb)
+    └── train_all.ipynb    # Loads data, preprocesses, trains all 5 models, saves models/*.pkl
 ```
 
 ---
@@ -100,7 +98,8 @@ assignment-2/
 pip install -r requirements.txt
 
 # 2. Train all models (downloads dataset, saves test_data.csv + models/*.pkl)
-python training/train_all.py
+jupyter nbconvert --to notebook --execute --inplace training/train_all.ipynb
+# (or open training/train_all.ipynb in Jupyter and Run All)
 
 # 3. Launch the Streamlit app
 streamlit run app.py
